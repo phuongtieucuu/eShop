@@ -11,7 +11,7 @@ using eShop.Data.EF;
 
 namespace eShop.Data.Migrations
 {
-    [DbContext(typeof(eShopDbContext))]
+    [DbContext(typeof(EShopDbContext))]
     [Migration("20230814102619_UpdateProduct")]
     partial class UpdateProduct
     {

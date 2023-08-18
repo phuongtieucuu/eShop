@@ -4,17 +4,17 @@ using Microsoft.Extensions.Configuration;
 
 namespace eShop.Data.EF
 {
-    public class EShopContextFactory : IDesignTimeDbContextFactory<eShopDbContext>
+    public class EShopContextFactory : IDesignTimeDbContextFactory<EShopDbContext>
     {
-        public eShopDbContext CreateDbContext(string[] args)
+        public EShopDbContext CreateDbContext(string[] args)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
             string connectionString = configuration.GetConnectionString("eShopDB");
 
-            var optionsBuilder = new DbContextOptionsBuilder<eShopDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<EShopDbContext>();
             optionsBuilder.UseNpgsql(connectionString);
 
-            return new eShopDbContext(optionsBuilder.Options);
+            return new EShopDbContext(optionsBuilder.Options);
         }
     }
 }

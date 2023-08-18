@@ -1,11 +1,13 @@
 ﻿using eShop.Data.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace eShop.Data.EF
 {
-    public class eShopDbContext : DbContext
+    public class EShopDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
-        public eShopDbContext(DbContextOptions options) : base(options)
+        public EShopDbContext(DbContextOptions options) : base(options)
         {
         }
 
@@ -24,6 +26,8 @@ namespace eShop.Data.EF
             {
                 c.HasKey(p => p.Id);
                 c.HasOne(e => e.Product).WithMany().HasForeignKey(e=> e.ProductId);
+                c.HasOne(e => e.AppUser).WithMany().HasForeignKey(e=> e.UserId);
+                
             });
             modelBuilder.Entity<Category>(c =>
             {
@@ -40,11 +44,13 @@ namespace eShop.Data.EF
             {
                 c.HasKey(c => c.Id);
                 c.HasOne(e => e.Product).WithMany().HasForeignKey(e => e.ProductId);
+                c.HasOne(e => e.AppUser).WithMany().HasForeignKey(e => e.UserId);
             });
 
             modelBuilder.Entity<Order>(o =>
             {
                 o.HasKey(e => e.Id);
+                o.HasOne(e => e.AppUser).WithMany().HasForeignKey(e => e.UserId);
             });
 
             modelBuilder.Entity<OrderDetail>(o =>
@@ -53,6 +59,41 @@ namespace eShop.Data.EF
                 o.HasOne(e => e.Order).WithMany(e => e.OrderDetails).HasForeignKey(e => e.OrderId);
                 o.HasOne(e => e.Product).WithMany().HasForeignKey(e => e.ProductId);
             });
+
+            modelBuilder.Entity<AppUser>(e =>
+            {
+                e.ToTable("AppUsers");
+            });          
+            modelBuilder.Entity<AppRole>(e =>
+            {
+                e.ToTable("AppRoles");
+            });          
+            modelBuilder.Entity<IdentityUserClaim<Guid>>(e =>
+            {
+                e.ToTable("AppUserClaim");
+            });
+                        
+            modelBuilder.Entity<IdentityUserRole<Guid>>(e =>
+            {
+                e.ToTable("AppUserRole");
+                e.HasKey(x => new { x.UserId , x.RoleId});
+            });            
+            modelBuilder.Entity<IdentityUserLogin<Guid>>(e =>
+            {
+                e.ToTable("AppUserLogin");
+                e.HasKey(x => x.UserId);
+            });
+                        
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>(e =>
+            {
+                e.ToTable("AppRoleClaim");
+            });            
+            modelBuilder.Entity<IdentityUserToken<Guid>>(e =>
+            {
+                e.ToTable("AppUserToken");
+                e.HasKey(x => x.UserId);
+            });
+
         }
 
     }

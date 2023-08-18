@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.WebApp", "eShop.WebApp\eShop.WebApp.csproj", "{E9576056-7025-4B2E-91E7-0F15AFFE25E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.WebApp", "eShop.WebApp\eShop.WebApp.csproj", "{E9576056-7025-4B2E-91E7-0F15AFFE25E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Data", "eShop.Data\eShop.Data.csproj", "{B0AFAA74-DF1A-4254-9F79-C0E466C51074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Data", "eShop.Data\eShop.Data.csproj", "{B0AFAA74-DF1A-4254-9F79-C0E466C51074}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Application", "eShop.Application\eShop.Application.csproj", "{63163E3B-E02C-441A-AA71-FD08A3B9FC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Utilities", "eShop.Utilities\eShop.Utilities.csproj", "{22A4E56F-2688-4C5D-863E-93AC78032088}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{B0AFAA74-DF1A-4254-9F79-C0E466C51074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0AFAA74-DF1A-4254-9F79-C0E466C51074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0AFAA74-DF1A-4254-9F79-C0E466C51074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63163E3B-E02C-441A-AA71-FD08A3B9FC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63163E3B-E02C-441A-AA71-FD08A3B9FC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63163E3B-E02C-441A-AA71-FD08A3B9FC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63163E3B-E02C-441A-AA71-FD08A3B9FC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A4E56F-2688-4C5D-863E-93AC78032088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A4E56F-2688-4C5D-863E-93AC78032088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A4E56F-2688-4C5D-863E-93AC78032088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A4E56F-2688-4C5D-863E-93AC78032088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

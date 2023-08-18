@@ -1,0 +1,11 @@
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\bin\Debug\net6.0\eShop.Utilities.deps.json
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\bin\Debug\net6.0\eShop.Utilities.dll
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\bin\Debug\net6.0\eShop.Utilities.pdb
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.AssemblyInfoInputs.cache
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.AssemblyInfo.cs
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.dll
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\refint\eShop.Utilities.dll
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\eShop.Utilities.pdb
+C:\Users\tiena\Desktop\thuchanh\eShopSolution\eShop.Utilities\obj\Debug\net6.0\ref\eShop.Utilities.dll
